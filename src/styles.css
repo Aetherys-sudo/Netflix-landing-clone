@@ -1,0 +1,358 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* MAIN CSS SETTINGS START HERE */
+.landing {
+    background: rgba(0, 0, 0, 0.6);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(8, 8, 8, 0.8) 40%, rgba(0,0,0,0.9) 100%);
+    height: 80vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+
+    /* BACKGROUND HERO IMAGE START */
+.hero {
+    position: absolute;
+    z-index: -1;
+    height: inherit;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+}
+    /* BACKGROUND HERO IMAGE END */
+
+    /* BREAKPOINT SETTINGS START */
+        .breakpoint {
+            width: 100%;
+            height: 10px;
+            background-color: #232323;
+        }
+    /* BREAKPOINT SETTINGS END */
+
+/* MAIN CSS SETTINGS END */
+
+/* NAVIGATION START */
+.navbar {
+    width: 65%;
+    display: flex;
+    padding: 30px;
+}
+
+    /* LANGUAGE BAR SETTINGS START*/
+.language-selector {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.lang-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lang-container > * {
+    height: 31px;
+}
+
+.lang-selector {
+    background: rgba(50,50,50,0.4);
+    color: white;
+    padding: 6px 10px 6px 40px;
+    border: 1px solid rgba(80, 80, 80, 0.8);
+    border-radius: 3px;
+}
+
+.lang-logo {
+    position: relative;
+    right: -30px;
+    top: 24%;
+    color: white;
+    background: rgba(0, 0, 0, 0.0);
+}
+    /* LANGUAGE BAR SETTINGS END*/
+
+    /* SIGN-IN BUTTON START */
+.signin-btn {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    background-color: #e50914;
+    width: 100px;
+    margin-left: 10px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    /* SIGN-IN BUTTON END */
+/* NAVIGATION END */
+
+/* MAIN HERO TEXT SETTINGS START */
+.text {
+    width: 50%;
+    text-align: center;
+    margin-top: 7%;
+}
+
+.main-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: -5px;
+}
+
+.subtitle1 {
+    font-size: 1.7rem;
+}
+
+.subtitle2 {
+    font-size: 1.3rem;
+}
+/* MAIN HERO TEXT SETTINGS END */
+
+/* EMAIL REGISTRATION FORM START */
+.email-form {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+
+}
+
+.email-input {
+    width: 350px;
+    height: 45px;
+    background: rgba(0, 0, 0, 0.0);
+    border: 1px solid rgba(80, 80, 80, 0.8);
+    border-radius: 4px;
+    color: white;
+    padding: 0 0 0 10px;
+    margin-left: 15%;
+    margin-right: 10px;
+}
+
+.email-submit {
+    background-color: #e50914;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    border: none;
+    font-size: large;
+    border-radius: 5px;
+}
+
+.email-submit > i {
+    margin-left: 15px;
+    margin-right: -20px;
+}
+/* EMAIL REGISTRATION FORM END */
+
+/* ADDITIONAL INFO TABS START */
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+    /* HERO BANNER 1 START */
+.banner {
+    width: inherit;
+    height: 600px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text {
+    height: 100%;
+    margin: 10px;
+    width: 30%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner-media {
+    height: 100%;
+    margin: 10px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.banner-media1 > img {
+    width: 500px;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.banner-media1 > video {
+    width: 370px;
+    height: auto;
+    position: absolute;
+    top: 32%;
+
+}
+    /* HERO BANNER 1 START */
+
+    /* HERO BANNER 2 START */
+
+.banner-media2 {
+    position: relative;
+}
+.banner-media2 > img {
+    width: 500px;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: contain;
+    z-index: 0;
+    position: absolute;
+}
+
+.download-banner {
+    overflow: hidden;
+    background-color: black;
+    width: 325px;
+    height: 100px;
+    position: relative;
+    top: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1; 
+    border-radius: 10px;
+    border: 2px solid #5a5a5a;
+}
+
+.banner-media2 > img.mobile-pic {
+    align-self: center;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.download-banner > p {
+    color: white;
+    padding-left: 10px;
+    font-weight: bold;
+    align-self: center;
+}
+
+.download-banner > p > span {
+    color: #000090;
+    font-weight: normal;
+}
+
+.download-banner > img.download-symbol {
+    object-fit: contain;
+    max-width: 100%;
+    width: 75px;
+    margin-left: 30px;
+    align-self: center;
+}
+    /* HERO BANNER 2 END */
+    
+    /* HERO BANNER 3 START */
+.banner-media3 {
+    position: relative;
+}
+
+.banner-media3 > img {
+    width: 500px;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.banner-media3 > video {
+    width: 275px;
+    height: auto;
+    position: absolute;
+    top: 27%;
+
+}
+    /* HERO BANNER 3 END */
+    
+    /* HERO BANNER 4 START */
+.banner-media4 > img {
+    object-fit: contain;
+    max-width: 100%;
+    width: 600px;
+}
+    /* HERO BANNER 4 END */
+/* ADDITIONAL INFO TABS END */
+
+/* FAQ SECTION START */
+.faq {
+    background-color: black;
+    margin: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.faq > h1 {
+    padding-bottom: 40px;
+}
+
+.question-container {
+    width: 55%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.question {
+    width: 100%;
+    height: 90px;
+    margin: 5px 0 5px 0;
+    background-color: #2d2d2d;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.question > p {
+    margin-left: 15px;
+}
+
+.question > svg {
+    margin-right: 15px;
+}
+
+.faq > h1 {
+    margin: 0;
+    padding-top: 40px;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+
+
+/* FAQ SECTION END */
