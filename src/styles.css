@@ -328,7 +328,6 @@ body {
 .question {
     width: 100%;
     height: 90px;
-    margin: 5px 0 5px 0;
     background-color: #2d2d2d;
     color: white;
     border: none;
@@ -336,14 +335,53 @@ body {
     align-items: center;
     justify-content: space-between;
     font-size: 25px;
+    margin-bottom: 10px;
 }
 
-.question > p {
+.question:hover {
+    background-color: #4b4b4b;
+}
+
+.question-answer {
+    margin-top: -9px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 25px;
+    visibility: hidden;
+    height: 0;
+    transform-origin: top;
+    transform: scaleY(0);    
+    transition: transform 0.2s linear;
+    
+}
+
+.active {
+    background-color: #4b4b4b;
+    visibility: visible;
+    height: auto;
+    transform: scaleY(1);
+    transition: transform 0.2s linear;
+}
+
+.rotate {
+    transform: rotate(45deg);
+    transition: transform 0.2s linear;
+}
+
+.question > p{
     margin-left: 15px;
+    
+}
+
+.question-answer > p {
+    margin-left: 19px;
+    margin-right: 15px;
 }
 
 .question > svg {
     margin-right: 15px;
+    -webkit-transition: transform 0.2s linear;
+    transition: transform 0.2s linear;
 }
 
 .faq > h1 {
