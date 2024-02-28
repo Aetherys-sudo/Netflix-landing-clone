@@ -394,3 +394,32 @@ body {
 
 
 /* FAQ SECTION END */
+
+/* FOOTER SECTION START */
+footer {
+    background-color: black;
+    
+}
+
+.links > ul{
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 35px;
+}
+
+ul > li {
+    width: 25%;
+    margin-bottom: 10px;
+}
+a {
+    color: #6d97b3;
+    text-decoration: underline;
+}
+
+.links > ul {
+    list-style-type: none;
+}
