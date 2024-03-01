@@ -418,6 +418,9 @@ a {
     color: #d2d3d4;
     text-decoration: underline;
 }
+a:active {
+    color: red;
+}
 
 .links > ul {
     list-style-type: none;
@@ -428,20 +431,29 @@ a {
 }
 
 .cookie-window {
-    top: 50%;
-    left: 50%;
+
     width: 800px;
     height: 600px;
-    position: fixed;
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 0.2s linear;
     background-color: white;
 }
 
+.dont-move {
+    position: absolute;
+    top: -500%;
+    left: -500%;
+}
+
+.move {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
 .active-cookie {
     opacity: 1;
-    transform: translate(-50%, -50%) scaleY(1);
     transition: opacity 0.2s linear;
 }
 
@@ -451,6 +463,21 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+.cookie-logo {
+    margin-left: 50px;
+    background-color: black;
+    width: auto;
+    height: auto;
+}
+
+.cookie-title {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    background-color: blue;
 }
 
 .cookie-x {
@@ -458,7 +485,6 @@ a {
     z-index: 1;
     flex-direction: column;
     margin-right: 10px;
-    margin-top: 10px;
     cursor:pointer;
 }
 
